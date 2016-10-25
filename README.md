@@ -2,6 +2,7 @@
 > The Fast Wavelet Transform is a mathematical algorithm designed to turn a waveform or signal in the time domain into a sequence of coefficients based on an orthogonal basis of small finite waves, or wavelets. The transform can be easily extended to multidimensional signals, such as images, where the time domain is replaced with the space domain. 
 
 Further details: https://en.wikipedia.org/wiki/Fast_wavelet_transform
+
 All coefficients taken from: http://wavelets.pybytes.com/ 
 
 ## Sample usage:
