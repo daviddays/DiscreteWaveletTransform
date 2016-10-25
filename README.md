@@ -22,9 +22,6 @@ var compressed = transformed.ApproximationCoefficients;
 // restore time series 
 var restored = DwtTransform.Inverse(transformed);
 ```
-## Warning
-Code `does not` check entry conditions for level and for input vector length. No exception would be thrown in case of improper input.
-
 ## Implemented wavelets:
 - Daubechies 1 (Haar),
 - Daubechies 2,
@@ -60,3 +57,6 @@ Code `does not` check entry conditions for level and for input vector length. No
 - Coiflet 3,
 - Coiflet 4,
 - Coiflet 5.
+
+## Warning
+Code `does not` check entry conditions for level and for input vector length. No exception would be thrown in case of improper input.
