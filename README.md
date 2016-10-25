@@ -1,27 +1,27 @@
 # Fast wavelet transform (DWT)
 > The Fast Wavelet Transform is a mathematical algorithm designed to turn a waveform or signal in the time domain into a sequence of coefficients based on an orthogonal basis of small finite waves, or wavelets. The transform can be easily extended to multidimensional signals, such as images, where the time domain is replaced with the space domain. Further details: https://en.wikipedia.org/wiki/Fast_wavelet_transform
 
-All coefficient taken from: http://wavelets.pybytes.com/ 
+All coefficients taken from: http://wavelets.pybytes.com/ 
 
 ## Sample usage:
 ```cs
-            // input vector
-            double[] input = new double[8] { 1, 1, 1, 1, 8, 1, 1, 1 };
-            // choose wavelet
-            var wavelet = WaveletFactory.Create(WaveletType.Daubechies_2);
-            // make forward transformation - two passes
-            var transformed = DwtTransform.Forward(input, wavelet, 2);
-            // make inverse transformation
-            var inverse = DwtTransform.Inverse(transformed);
-            // clear details for compresion/smoothing
-            transformed.ZeroDetailCoefficients();
-            // get compressed time series
-            var compressed = transformed.ApproximationCoefficients;
-            // restore time series 
-            var restored = DwtTransform.Inverse(transformed);
+// input vector
+double[] input = new double[8] { 1, 1, 1, 1, 8, 1, 1, 1 };
+// choose wavelet
+var wavelet = WaveletFactory.Create(WaveletType.Daubechies_2);
+// make forward transformation - two passes
+var transformed = DwtTransform.Forward(input, wavelet, 2);
+// make inverse transformation
+var inverse = DwtTransform.Inverse(transformed);
+// clear details for compresion/smoothing
+transformed.ZeroDetailCoefficients();
+// get compressed time series
+var compressed = transformed.ApproximationCoefficients;
+// restore time series 
+var restored = DwtTransform.Inverse(transformed);
 ```
 ## Warning
-Code does not check entry condition for level and for input vector length. No exeption would be thrown.
+Code `does not` check entry conditions for level and for input vector length. No exception would be thrown in case improper input.
 
 ## Implemented wavelets:
 - Daubechies 1 (Haar),
