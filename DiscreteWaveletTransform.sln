@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscreteWaveletTransform.Dw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscreteWaveletTransform.ConsoleTest", "DiscreteWaveletTransform.ConsoleTest\DiscreteWaveletTransform.ConsoleTest.csproj", "{8F7F5FFF-2695-47D4-8677-C414304A14C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45F10D72-3A42-4105-8F87-D7C57040273D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
