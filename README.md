@@ -23,7 +23,7 @@ var compressed = transformed.ApproximationCoefficients;
 var restored = DwtTransform.Inverse(transformed);
 ```
 ## Warning
-Code `does not` check entry conditions for level and for input vector length. No exception would be thrown in case improper input.
+Code `does not` check entry conditions for level and for input vector length. No exception would be thrown in case of improper input.
 
 ## Implemented wavelets:
 - Daubechies 1 (Haar),
