@@ -25,6 +25,7 @@ namespace DiscreteWaveletTransform.ConsoleTest
             var compressed = transformed.ApproximationCoefficients;
             // restore time series
             var restored = DwtTransform.Inverse(transformed);
+            Console.WriteLine("Done.");
             Console.ReadKey();
 
         }
